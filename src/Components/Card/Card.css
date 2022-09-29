@@ -1,5 +1,5 @@
 .card img{
-     height: 30% ;
+     height:150px ;
      width: 100% ;
 }
 
@@ -21,4 +21,20 @@
      background-color: rgb(86, 162, 255);
      color: white;
      font-size: 16px;
+     margin-bottom: 20px;
+     margin-top: -5px;
+    
 }
+
+
+@media only screen and (max-width: 700px) {
+     
+     .page{
+          display: grid; 
+          grid-template-columns: 1fr;
+          margin: 0px;
+
+     }
+     
+
+   }

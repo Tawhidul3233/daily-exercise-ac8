@@ -1,5 +1,5 @@
 .about-myself{
-     margin-left: 30px;
+     margin: 0 20px;
      border: 1px solid rgb(218, 212, 212);
 }
 
@@ -42,7 +42,7 @@
      background-color: rgb(214, 227, 243);
      margin-top: 20px;
      border-radius: 5px;
-     justify-content: center;
+     justify-content: space-evenly;
 }
 .my-info p{
      margin-top: -15px;
