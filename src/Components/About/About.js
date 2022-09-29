@@ -8,6 +8,14 @@ const About = (props) => {
      for(const item of card){
           total = total + item.time;
      }
+
+
+     const handelBreakTime = (event)=> {
+          const time = event.target.innerText;
+          const {state}= setState(time);
+     }
+
+
      return (
          <div className='about-myself'>
            <div className='about'>
@@ -35,16 +43,16 @@ const About = (props) => {
                <div className='break'>
                     <h3> Add A Break </h3>
                     <div className='all-btn'>
-                         <button className='a-btn'> {10}m </button>
-                         <button className='a-btn'> 15m </button>
-                         <button className='a-btn'> 20m </button>
-                         <button className='a-btn'> 25m </button>
+                         <button onClick={(event)=>handelBreakTime(event)} className='a-btn'> {10}m </button>
+                         {/* <button onClick={(event)=>handelBreakTime(event)} className='a-btn'> 15m </button>
+                         <button onClick={(event)=>handelBreakTime(event)} className='a-btn'> 20m </button>
+                         <button onClick={(event)=>handelBreakTime(event)} className='a-btn'> 25m </button> */}
                     </div>
                </div>
                <div className='exercise'>
                     <h3> Exercise Details </h3>
                     <div className='exercise-item'>
-                         Exercise time : <span className='break-time'> 0 </span> min
+                         Exercise time : <span className='break-time'> {state} </span> min
                     </div>
                     <div className='exercise-item'>
                          Break time : <span className='total-time'> {total} min </span> 
