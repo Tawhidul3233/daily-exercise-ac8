@@ -38,6 +38,7 @@ const About = (props) => {
                          <p>Age</p>
                     </div>
                </div>
+          
                <div className='break'>
                     <h3> Add A Break </h3>
                     <div className='all-btn'>
@@ -56,7 +57,7 @@ const About = (props) => {
                          Break time : <span className='total-time'> {total} min </span> 
                     </div>
                     <div>
-                         <button className='button'>Activity Completed</button>
+                         <button className='button'>Acteivity Completed</button>
                     </div>
                </div>
           </div>
