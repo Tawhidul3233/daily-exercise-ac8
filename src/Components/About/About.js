@@ -1,7 +1,13 @@
 import React from 'react';
 import './About.css'
 
-const About = () => {
+const About = (props) => {
+     const {card} = props;
+    
+     let total = 0 ;
+     for(const item of card){
+          total = total + item.time;
+     }
      return (
          <div className='about-myself'>
            <div className='about'>
@@ -29,20 +35,19 @@ const About = () => {
                <div className='break'>
                     <h3> Add A Break </h3>
                     <div className='all-btn'>
-                         <button className='a-btn'> 10m </button>
+                         <button className='a-btn'> {10}m </button>
                          <button className='a-btn'> 15m </button>
                          <button className='a-btn'> 20m </button>
                          <button className='a-btn'> 25m </button>
-                         
                     </div>
                </div>
                <div className='exercise'>
                     <h3> Exercise Details </h3>
                     <div className='exercise-item'>
-                         Exercise time : 
+                         Exercise time : <span className='break-time'> 0 </span> min
                     </div>
                     <div className='exercise-item'>
-                         Break time :
+                         Break time : <span className='total-time'> {total} min </span> 
                     </div>
                     <div>
                          <button className='button'>Activity Completed</button>

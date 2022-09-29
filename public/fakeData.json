@@ -10,7 +10,7 @@
      {
        "id": "2",
        "name": "Pushups",
-       "time": 5,
+       "time": 8,
        "img": "./img/images.png",
        "age" : "20-30",
        "body": "Drop and give me 20! Pushups are one of the most basic yet effective bodyweight moves you can perform because of the number of muscles that are recruited to perform them. "
@@ -18,7 +18,7 @@
      {
        "id": "3",
        "name": "Squats",
-       "time": 5,
+       "time": 6,
        "img": "./img/images3.png",
        "age" : "20-30",
        "body": "Quats increase lower body and core strength, as well as flexibility in your lower back and hips. Because they engage some of the largest muscles in the body, "
@@ -26,7 +26,7 @@
      {
        "id": "4",
        "name": "Overhead dumbbe",
-       "time": 5,
+       "time": 10,
        "img": "./img/xdb-50e-seated-dumbbell-shoulder-press-m1-16x9.jpg",
        "age" : "20-30",
        "body": "Compound exercises, which utilize multiple joints and muscles, are perfect for busy bees as they work several parts of your body at once. A standing overhead press isn’t only  "
@@ -34,7 +34,7 @@
      {
        "id": "5",
        "name": " Dumbbell rows",
-       "time": 5,
+       "time": 15,
        "img": "./img/rKjNSasAgRKvcV69Fhg4mU.jpg",
        "age" : "20-30",
        "body": " Not only will these make your back look killer in that dress, but dumbbell rows are also another compound exercise that strengthens multiple muscles in your upper body. "
@@ -42,7 +42,7 @@
      {
        "id": "6",
        "name": " Deadlifts",
-       "time": 5,
+       "time": 12,
        "img": "./img/how-to-deadlift-a-beginners-guide-graphics-2.jpg",
        "age" : "20-30",
        "body": " This is another exercise that challenges your balance. Single-leg deadlifts require stability and leg strength. Grab a light to moderate dumbbell to complete this move."

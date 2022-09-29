@@ -1,8 +1,9 @@
 import React from 'react';
 import './Card.css'
 
-const Card = (props) => {
-const {name, img, time, age, body}=props.item
+const Card = ( props ) => {
+     const {addToList,item} = props;
+const {name, img, time, age, body}= item ;
      return (
           <div className='card'>
                <img src={img} alt="" />
@@ -11,10 +12,10 @@ const {name, img, time, age, body}=props.item
                     <p> {body.slice(0, 120)}... </p>
                     <h5>For Age : {age} </h5>
                     <h5>Time required :  {time}m</h5>
-                    <button className='button'> Add to list </button>
+                    <button onClick={()=> addToList(item)}  className='button'> Add to list </button>
                </div>
           </div>
-     );
+     )
 };
 
 export default Card;

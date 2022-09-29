@@ -6,12 +6,25 @@ import './Page.css'
 
 const Page = () => {
      const [items, setItems] = useState([])
+     const [card, setCard] = useState([])
+     
+
+
      useEffect(()=> {
           fetch('fakeData.json')
           .then(res => res.json())
           .then(data => setItems(data))
      }, 
-     [])
+     []);
+
+
+
+const addToList = (item) => {
+     const newCard = [...card, item]
+     setCard(newCard)
+}
+
+
      return (
           <div>
                <div className='page'>
@@ -25,12 +38,12 @@ const Page = () => {
                          </div>
                          <div className='item-set'>
                               {
-                              items.map(item => <Card key={item.id} item={item} > </Card>)
+                              items.map(item => <Card addToList={addToList} key={item.id} item={item} > </Card>)
                               }
                          </div>
                     </div>
                     <div >
-                         <About> </About>
+                         <About card={card}> </About>
                     </div>
                </div>
                <div>
