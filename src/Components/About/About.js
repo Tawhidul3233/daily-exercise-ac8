@@ -1,6 +1,8 @@
 import React from 'react';
 import './About.css'
 
+
+
 const About = (props) => {
      const {card} = props;
     
@@ -10,10 +12,6 @@ const About = (props) => {
      }
 
 
-     const handelBreakTime = (event)=> {
-          const time = event.target.innerText;
-          const {state}= setState(time);
-     }
 
 
      return (
@@ -43,16 +41,16 @@ const About = (props) => {
                <div className='break'>
                     <h3> Add A Break </h3>
                     <div className='all-btn'>
-                         <button onClick={(event)=>handelBreakTime(event)} className='a-btn'> {10}m </button>
-                         {/* <button onClick={(event)=>handelBreakTime(event)} className='a-btn'> 15m </button>
-                         <button onClick={(event)=>handelBreakTime(event)} className='a-btn'> 20m </button>
-                         <button onClick={(event)=>handelBreakTime(event)} className='a-btn'> 25m </button> */}
+                         <button  className='a-btn'> {10}m </button>
+                         <button  className='a-btn'> 15m </button>
+                         <button  className='a-btn'> 20m </button>
+                         <button  className='a-btn'> 25m </button>
                     </div>
                </div>
                <div className='exercise'>
                     <h3> Exercise Details </h3>
                     <div className='exercise-item'>
-                         Exercise time : <span className='break-time'> {state} </span> min
+                         Exercise time : <span className='break-time'> 00 </span> min
                     </div>
                     <div className='exercise-item'>
                          Break time : <span className='total-time'> {total} min </span> 
