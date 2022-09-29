@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import About from '../About/About';
 import Card from '../Card/Card';
 import './Page.css'
 
@@ -27,7 +28,7 @@ const Page = () => {
                     </div>
                </div>
                <div>
-                   <h1> right </h1>
+                    <About> </About>
                </div>
           </div>
      );
