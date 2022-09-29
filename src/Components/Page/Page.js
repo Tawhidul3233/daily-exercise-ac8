@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import About from '../About/About';
 import Card from '../Card/Card';
+import Question from '../Question/Question';
 import './Page.css'
 
 const Page = () => {
@@ -12,23 +13,28 @@ const Page = () => {
      }, 
      [])
      return (
-          <div className='page'>
-               <div>
-                    <div className='header-title'>
-                         <div className='header-logo'>
-                              <img src="../../../public/img/download.png" alt="" />
-                              <h2> My Daily exercise </h2>
+          <div>
+               <div className='page'>
+                    <div>
+                         <div className='header-title'>
+                              <div className='header-logo'>
+                                   <img src="../../../public/img/download.png" alt="" />
+                                   <h2> My Daily exercise </h2>
+                              </div>
+                              <h4>Select today’s exercise</h4>
                          </div>
-                         <h4>Select today’s exercise</h4>
+                         <div className='item-set'>
+                              {
+                              items.map(item => <Card key={item.id} item={item} > </Card>)
+                              }
+                         </div>
                     </div>
-                    <div className='item-set'>
-                    {
-                         items.map(item => <Card key={item.id} item={item} > </Card>)
-                    }
+                    <div >
+                         <About> </About>
                     </div>
                </div>
-               <div >
-                    <About> </About>
+               <div>
+                    <Question> </Question>
                </div>
           </div>
      );
