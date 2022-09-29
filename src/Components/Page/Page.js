@@ -17,7 +17,7 @@ const Page = () => {
                     <div className='header-title'>
                          <div className='header-logo'>
                               <img src="../../../public/img/download.png" alt="" />
-                              <h2> My Daily Excersis </h2>
+                              <h2> My Daily exercise </h2>
                          </div>
                          <h4>Select today’s exercise</h4>
                     </div>
@@ -27,7 +27,7 @@ const Page = () => {
                     }
                     </div>
                </div>
-               <div>
+               <div >
                     <About> </About>
                </div>
           </div>

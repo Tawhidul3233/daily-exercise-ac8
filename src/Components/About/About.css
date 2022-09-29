@@ -1,5 +1,11 @@
-.about{
+.about-myself{
      margin-left: 30px;
+     border: 1px solid rgb(218, 212, 212);
+}
+
+.about{
+    text-align: center;
+    margin: 20px 15px;
 }
 
 .about-me{
@@ -27,4 +33,70 @@
 .about-name h3{
      font-size: 17px;
      margin: -1px 0;
+}
+
+.my-info{
+     display: flex;
+     font-size: 15px;
+     gap: 20px;
+     background-color: rgb(214, 227, 243);
+     margin-top: 20px;
+     border-radius: 5px;
+     justify-content: center;
+}
+.my-info p{
+     margin-top: -15px;
+     font-size: 15px;
+     font-weight: 300;
+}
+
+.my-info span{
+     font-weight: 400;
+}
+
+.break h3{
+     text-align: left;
+     margin-top: 40px;
+}
+
+.all-btn{
+     display: flex;
+     justify-content: space-evenly;
+     background-color: rgb(214, 227, 243);
+     padding: 10px ;
+     border-radius: 5px;
+}
+
+.a-btn{
+     height: 40px;
+     width: 40px;
+     border-radius: 50%;
+     background-color: white;
+     margin: 0 2px;
+     border: none;
+     color: black;
+     font-size: 12px;
+}
+
+.button{
+     height: 40px;
+     width: 100%;
+     border: none;
+     border-radius: 5px;
+     background-color: rgb(86, 162, 255);
+     color: white;
+     font-size: 16px;
+     margin-top: 30px;
+}
+
+.exercise{
+    text-align: left;
+    margin-top: 30px;
+}
+
+.exercise-item{
+     background-color: rgb(214, 227, 243);
+     margin-bottom: 15px;
+     padding: 10px 15px;
+     border-radius: 5px;
 }
