@@ -1,18 +1,30 @@
 import React, { useEffect, useState } from 'react';
+import Card from '../Card/Card';
 import './Page.css'
 
 const Page = () => {
-     const [item, setItem] = useState([])
+     const [items, setItems] = useState([])
      useEffect(()=> {
           fetch('fakeData.json')
           .then(res => res.json())
-          .then(data => console.log(data[0].img))
+          .then(data => setItems(data))
      }, 
      [])
      return (
           <div className='page'>
                <div>
-                    <h1> actici </h1>
+                    <div className='header-title'>
+                         <div className='header-logo'>
+                              <img src="../../../public/img/download.png" alt="" />
+                              <h2> My Daily Excersis </h2>
+                         </div>
+                         <h4>Select today’s exercise</h4>
+                    </div>
+                    <div className='item-set'>
+                    {
+                         items.map(item => <Card key={item.id} item={item} > </Card>)
+                    }
+                    </div>
                </div>
                <div>
                    <h1> right </h1>

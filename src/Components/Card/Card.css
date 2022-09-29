@@ -1,0 +1,24 @@
+.card img{
+     height: 30% ;
+     width: 100% ;
+}
+
+.card{
+     border: 1px solid rgb(207, 206, 206);
+     background-color: rgb(231, 242, 255);
+     border-radius: 5px;
+}
+
+.card-body{
+     padding:0 15px;
+}
+
+.button{
+     height: 40px;
+     width: 100%;
+     border: none;
+     border-radius: 5px;
+     background-color: rgb(86, 162, 255);
+     color: white;
+     font-size: 16px;
+}

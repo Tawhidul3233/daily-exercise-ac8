@@ -1,5 +1,30 @@
 .page{
      display: grid; 
      grid-template-columns: 4fr 1fr;
+     margin: 30px;
 
+}
+
+.header-title{
+     text-align: left;
+}
+
+.item-set{
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     gap: 20px;
+     
+}
+
+.header-logo {
+     display: flex;
+     align-items: center;
+}
+
+.header-logo img{
+     height: 50px;
+     width: 50px;
+     border-radius: 50%;
+     margin-right: 10px;
+     
 }
