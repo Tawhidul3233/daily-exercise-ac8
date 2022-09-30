@@ -16,9 +16,9 @@ const About = (props) => {
      const [times, setTimes] = useState(0)
      
      const addToBreak = (event) => {
-          const time = event.target.innerText.slice(0,2);
-          setTimes(time)
-          console.log(time)
+          const time = event.target.innerText;
+          setTimes(time.slice(0,2))
+          localStorage.setItem('Break time', time )
 
      }
 
