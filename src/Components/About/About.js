@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './About.css'
 
 
@@ -11,6 +11,16 @@ const About = (props) => {
           total = total + item.time;
      }
 
+
+
+     const [times, setTimes] = useState(0)
+     
+     const addToBreak = (event) => {
+          const time = event.target.innerText.slice(0,2);
+          setTimes(time)
+          console.log(time)
+
+     }
 
 
 
@@ -42,19 +52,20 @@ const About = (props) => {
                <div className='break'>
                     <h3> Add A Break </h3>
                     <div className='all-btn'>
-                         <button  className='a-btn'> 10m </button>
-                         <button  className='a-btn'> 15m </button>
-                         <button  className='a-btn'> 20m </button>
-                         <button  className='a-btn'> 25m </button>
+                         <button onClick={(event)=>addToBreak(event)} className='a-btn'>10m</button>
+                         <button onClick={(event)=>addToBreak(event)}  className='a-btn'>15m</button>
+                         <button onClick={(event)=>addToBreak(event)} className='a-btn'>20m</button>
+                         <button onClick={(event)=>addToBreak(event)} className='a-btn'>25m</button>
                     </div>
                </div>
                <div className='exercise'>
                     <h3> Exercise Details </h3>
                     <div className='exercise-item'>
-                         Exercise time : <span className='break-time'> 00 </span> min
+                         Exercise time :<span className=' total-time'> {total} </span> min
                     </div>
                     <div className='exercise-item'>
-                         Break time : <span className='total-time'> {total} min </span> 
+                         Break time :<span className='
+                         break-time'>{times}</span> min
                     </div>
                     <div className='activites'>
                          <button className='button'>Acteivity Completed</button>

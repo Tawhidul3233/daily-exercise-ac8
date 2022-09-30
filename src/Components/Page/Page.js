@@ -19,10 +19,10 @@ const Page = () => {
 
 
 
-const addToList = (item) => {
-     const newCard = [...card, item]
-     setCard(newCard)
-}
+     const addToList = (item) => {
+          const newCard = [...card, item]
+          setCard(newCard)
+     }
 
 
      return (
