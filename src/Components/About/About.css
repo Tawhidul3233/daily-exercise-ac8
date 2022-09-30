@@ -15,9 +15,9 @@
 }
 
 .about-me img {
-     height: 40px;
-     width: 40px;
-     border-radius: 50%;
+     height: 50px;
+     width: 50px;
+     border-radius: 30%;
      margin-right: 20px;
      
 }
@@ -78,6 +78,11 @@
      font-size: 12px;
 }
 
+.a-btn:hover{
+     background-color: rgb(86, 162, 255);
+     color: white;
+}
+
 .button{
      height: 40px;
      width: 100%;
@@ -91,7 +96,8 @@
 
 .exercise{
     text-align: left;
-    margin-top: 30px;
+    margin: 30px 0px;
+    
 }
 
 .exercise-item{
@@ -99,7 +105,13 @@
      margin-bottom: 15px;
      padding: 10px 15px;
      border-radius: 5px;
+     
 }
+
+.activites{
+     margin-top: 40px;
+}
+
 
 
 .total-time{

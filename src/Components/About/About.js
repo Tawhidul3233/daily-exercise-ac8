@@ -18,7 +18,7 @@ const About = (props) => {
          <div className='about-myself'>
            <div className='about'>
                <div className='about-me'>
-                    <img src="../../../public/img/me.jpg" alt="" />
+                    <img src="./img/me.jpg" alt="" />
                     <div className='about-name'>
                          <h3>Ti Rony</h3>
                          <p>Patuakhali, Bangladesh</p>
@@ -42,7 +42,7 @@ const About = (props) => {
                <div className='break'>
                     <h3> Add A Break </h3>
                     <div className='all-btn'>
-                         <button  className='a-btn'> {10}m </button>
+                         <button  className='a-btn'> 10m </button>
                          <button  className='a-btn'> 15m </button>
                          <button  className='a-btn'> 20m </button>
                          <button  className='a-btn'> 25m </button>
@@ -56,7 +56,7 @@ const About = (props) => {
                     <div className='exercise-item'>
                          Break time : <span className='total-time'> {total} min </span> 
                     </div>
-                    <div>
+                    <div className='activites'>
                          <button className='button'>Acteivity Completed</button>
                     </div>
                </div>

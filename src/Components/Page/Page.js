@@ -31,7 +31,7 @@ const addToList = (item) => {
                     <div>
                          <div className='header-title'>
                               <div className='header-logo'>
-                                   <img src="../../../public/img/download.png" alt="" />
+                                   <img src="img/header.png" alt="" />
                                    <h2> My Daily exercise </h2>
                               </div>
                               <h4>Select today’s exercise</h4>
